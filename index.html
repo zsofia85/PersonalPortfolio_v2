@@ -51,51 +51,52 @@
     </header>
 
     <section class="container-intro">
-        <div class="intro-txt">
-            <h1 id="landing">Zsofia Csagoly</h1>
-        </div>
-        <div class="pitch">
-            <h3>
-                A multimedia design student, who is passionate about informative, intuitive content.
-                <br>Aspiring UX/UI professional with background in research.
-                <br>Here to be part of the solution by creating simple, valuable and meaningful experiences.
-            </h3>
+        <div class="center-box">
+            <div class="intro-txt">
+                <h1 id="landing">Zsofia Csagoly</h1>
+            </div>
+            <div class="pitch">
+                <h3>
+                    A multimedia design student, who is passionate about informative, intuitive content.
+                    <br>Aspiring UX/UI professional with background in research.
+                    <br>Here to be part of the solution by creating simple, valuable and meaningful experiences.
+                </h3>
+            </div>
         </div>
     </section>
 
     <section class="container-work">
-        <div class="title-section">
-            <h1>Selected works</h1>
-        </div>
-        <div class="subtitle">
-            <div class="column1"></div>
-            <div class="column2">
-                <p>the professional</p>
+        <div class="container-title">
+            <div class="title-section">
+                <h1>Selected works</h1>
+            </div>
+            <div class="subtitle">
+                <div class="column1"></div>
+                <div class="column2">
+                    <p>the professional</p>
+                </div>
             </div>
         </div>
 
         <section class="card-holder">
             <div class="product-imgA"></div>
-
             <div class="productA">
-                <div class="column3"></div>
                 <div class="project-desc">
                     <div class="project-label">
-                        <h3>Ungdomsringens Musikfestival website</h3>
+                        <h2>Center for Dyreterapi Website</h2>
                     </div>
-                    <button>See more</button>
+                    <a>See more</a>
                 </div>
             </div>
         </section>
 
         <section class="card-holder">
             <div class="productB">
-                <div class="column3"></div>
                 <div class="project-desc">
                     <div class="project-label">
-                        <h3>Center for Dyreterapi website</h3>
+                        <h2>Ungdomsringens Musikfestival Website</h2>
                     </div>
-                    <button>See more</button>
+                    <a>See more</a>
                 </div>
             </div>
             <div class="product-imgB"></div>
@@ -103,55 +104,105 @@
 
         <section class="card-holder">
             <div class="product-imgC"></div>
-
             <div class="productC">
-                <div class="column3"></div>
                 <div class="project-desc">
                     <div class="project-label">
-                        <h3>Promotional Video for a fictional client</h3>
+                        <h2>Promotional Video Production</h2>
                     </div>
-                    <button>See more</button>
+                    <a>See more</a>
                 </div>
             </div>
         </section>
 
         <section class="card-holder">
             <div class="productD">
-                <div class="column3"></div>
                 <div class="project-desc">
                     <div class="project-label">
-                        <h3>Showcasing of Personal Photography</h3>
+                        <h2>Showcasing of Personal Visual Diary</h2>
                     </div>
-                    <button>See more</button>
+                    <button onclick="unfold()" type="button" value="OpenGallery" id="ViewBtn">View</button>
                 </div>
             </div>
             <div class="product-imgD"></div>
         </section>
 
         <section id="gallery" class="container-gallery">
-            <div class="gallery-card gutter">
-                <div class="gallery1 gap"></div>
-                <div class="gallery2 gap"></div>
-                <div class="gallery3"></div>
-            </div>
+            <div class="album">
+                <div class="gallery-card gutter">
+                    <div class="gallery1 gap"></div>
+                    <div class="gallery2 gap"></div>
+                    <div class="gallery3"></div>
+                </div>
 
-            <div class="gallery-card gutter">
-                <div class="gallery4 gap"></div>
-                <div class="gallery5 gap"></div>
-                <div class="gallery6"></div>
-            </div>
+                <div class="gallery-card gutter">
+                    <div class="gallery4 gap"></div>
+                    <div class="gallery5 gap"></div>
+                    <div class="gallery6"></div>
+                </div>
 
-            <div class="gallery-card gutter">
-                <div class="gallery7 gap"></div>
-                <div class="gallery8 gap"></div>
-                <div class="gallery9"></div>
+                <div class="gallery-card gutter">
+                    <div class="gallery7 gap"></div>
+                    <div class="gallery8 gap"></div>
+                    <div class="gallery9"></div>
+                </div>
             </div>
-
 
         </section>
     </section>
 
+    <section class="container-about">
+        <div class="container-title">
+            <div class="title-section">
+                <div class="narrowTitle">
+                    <h1>Making the right thing and making it right</h1>
+                </div>
+            </div>
+            <div class="subtitle">
+                <div class="column1"></div>
+                <div class="column2">
+                    <p>the personal</p>
+                </div>
+            </div>
+        </div>
 
+        <section class="about-info">
+            <section class="about-txt">
+                <p>
+                    A researcher turned UX designer, at the beginning of her creative journey.
+                    I am passionate about the research and visual processes of creating websites,
+                    slowly acquainting myself with the technical elements as well.<br>
+                    <br>
+                    My aim is to acquire a well-rounded set of skills which will allow to help create simple,
+                    valuable and meaningful solutions.<br>
+                    <br>
+                    When it is playtime, I am enjoying the outdoors while walking,
+                    running (Aalborg Atletik & Motion), swimming or organic farming.
+                    Highly appreciative of fireplaces, a cozy knitting project or a good book.
+                </p>
+                <div class=btnPlacement>
+                    <button>CV as PDF</button>
+                </div>
+            </section>
+            <section class="about-img">
+                <div id="profile"></div>
+            </section>
+        </section>
+        <section class="about-work">
+            <div class="outlines"></div>
+            <div class="WorkProcess">
+                <div class="projectDesc">
+                    <h2>Work Process</h2>
+                    <p>In my approach to projects, I rely on my curiosity, observational skills,
+                        critical thinking and strategic problem solving.
+                        Trained in research and fine arts, I strive for creating collaborative solutions,
+                        which are backed up by data and designed with an aesthetic eye,
+                        while keeping the big picture view of our users, businesses and sustainability at the center.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </section>
 
 
 
