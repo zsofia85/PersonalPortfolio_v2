@@ -192,10 +192,11 @@ nav {
     height: 80vh;
     width: 70%;
     justify-content: center;
+    text-align: center;
     padding: var(--margin-small) 0;
 }
 
-.center-box:after {
+/*.center-box:after {
     content: '';
     display: block;
     margin: 0 auto;
@@ -219,9 +220,16 @@ nav {
 
 /*landing page ends here*/
 
+#landing {
+padding-bottom: var(--margin-large);
+}
+
+
+
 .container-work {
     background-color: var(--background-medium);
     text-align: center;
+    padding-top: var(--margin-large);
 }
 
 .container-title{
@@ -457,12 +465,10 @@ text-align: left;
     flex-direction: column;
     align-items: center;
     text-align: left;
-    border-top: solid 5px var(--border-purple);
 }
-.btn-placement{
-    display: flex;
-    justify-content: center;
-    padding-top: var(--margin-medium);
+
+.btnPlacement button {
+    margin-top: var(--margin-medium);
 }
 
 button {
