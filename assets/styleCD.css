@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* CSS Document 
+Zsofia Csagoly - mmdi 0919
+PersonalPortfolio_V2_CaseStudy1 */
+
+* {
+    box-sizing: border-box;
+}
+
+/* -- establishing variables -- */
+
+:root {
+    --background-light: #FFFFFF;
+    --background-medium: #FFFAFA;
+    --background-purple: #211834;
+    --nav-purple: #D4C1EC;
+    --border-purple: #c39ef2;
+    --text-light: #f2f2ff;
+    --text-dark: #211834;
+    --highlight: #FF5154;
+    --shadow: #808080;
+    --primary-font: 'Montserrat', sans-serif;
+    --margin-large: 15%;
+    --margin-medium: 8%;
+    --margin-small: 2px;
+    --padding-large: 5%;
+    --padding-medium: 25px;
+    --padding-small: 2px;
+}
+
+html, body {
+    background-color: var(--background-medium);
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    height: 100%;
+    letter-spacing: 0.1em;
+    scroll-behavior: smooth;
+}
+
+i {
+    color: var(--text-dark);
+}
+
+h1 {
+    font-family: var(--primary-font);
+    font-size: 3em;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin: 0;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    font-size: 2.5em;
+    padding: 40px 0;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--primary-font);
+    color: var(--text-medium);
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-family: var(--primary-font);
+    color: var(--text-medium);
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+a {
+    font-family: var(--primary-font);
+    color: var(--highlight);
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.zoom {
+    transition: transform .1s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.zoomImg {
+    transition: transform .1s;
+    margin: 0 auto;
+}
+
+.zoomImg:hover {
+    transform: scale(1.05);
+}
+
+/* -- navigation section of page -- */
+
+nav {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    margin: 0;
+    background-color: var(--background-light);
+    border-bottom: #D4C1EC solid 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--margin-medium);
+    padding-right: var(--margin-medium);
+}
+
+.nav-links {
+    width: 33%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    background-color: var(--background-light);
+    top: 0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style-type: none;
+}
+
+.not-logo a {
+    margin: 0;
+    padding: 0.4em 2em;
+    color: var(--highlight);
+    font-family: var(--primary-font);
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+
+.not-logo a:hover {
+    color: var(--highlight);
+    text-shadow: 1px 1px 30px #FF5154, 1px 0px 30px #FF5154;
+}
+
+.navigation .not-logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    background-image: url(logo/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+/*.logo :hover {
+    box-shadow: 1px 1px 5px #ff989a, 1px 0px 15px #ff989a;
+}*/
+
+.social-iconsA {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-iconsA i {
+    color: var(--highlight);
+}
+
+.social-iconsA i:hover {
+    color: var(--highlight);
+    text-shadow: 1px 1px 30px #FF5154, 1px 0px 30px #FF5154;
+}
+
+.icon_gap {
+    margin: 0 10px;
+}
+
+/* navigation ends here*/

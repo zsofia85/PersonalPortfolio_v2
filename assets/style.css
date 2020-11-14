@@ -148,10 +148,6 @@ nav {
     text-decoration: none;
 }
 
-#works {
-    border: none;
-}
-
 .not-logo a:hover {
     color: var(--highlight);
     text-shadow: 1px 1px 30px #FF5154, 1px 0px 30px #FF5154;
@@ -521,12 +517,13 @@ nav {
     font-family: var(--primary-font);
     color: var(--highlight);
     font-weight: 600;
-    text-decoration: underline;
+    font-size: small;
 }
 
 .recommend ul li {
     line-height: 3em;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .workSub {
