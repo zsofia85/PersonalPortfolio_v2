@@ -5,7 +5,7 @@
     for (i = 0; i < fold.length; i++) {
         fold[i].addEventListener("click", function(){
             this.classList.toggle("active");
-            
+
             var gallery = this.nextElementSibling;
             if (gallery.style.display === "block") {
                 gallery.style.display = "none";
@@ -14,3 +14,5 @@
             }
         });
     }
+
+
