@@ -24,7 +24,7 @@ PersonalPortfolio_V2 */
     --margin-medium: 8%;
     --margin-small: 2px;
     --padding-large: 5%;
-    --padding-medium: 5px;
+    --padding-medium: 25px;
     --padding-small: 2px;
 }
 
@@ -459,12 +459,83 @@ text-align: left;
     background-repeat: no-repeat;
 }
 
-.WorkProcess {
-    width: 66.666%;
+.wrapWork{
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+.workTitle{
+    display: flex;
+    justify-content: left;
+}
+
+.workProcess {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: left;
+    margin: var(--margin-medium) 0;
+}
+
+.workDesc{
+    width: 60%;
+}
+
+.recommend{
+    display: flex;
+    justify-content: flex-end;
+}
+.recommend ul {
+    list-style-type: none;
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.recommend ul li{
+    line-height: 3em;
+    cursor: pointer;
+}
+.workSub{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-bottom: var(--margin-large);
+}
+.workSubSkills{
+    text-align: left;
+    
+}
+.workSubSkills ul{
+    list-style-type: none;
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    line-height: 2em;
+    padding: 0;
+}
+.workSubSkillsItem{
+    padding: var(--margin-medium) 0;
+}
+.workSubSkillsItem h3{
+    font-weight: 600;
+    color: var(--text-dark);
+}
+.eduProcess{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.eduDesc {
+    width: 60%;
+    text-align: left;
+}
+.eduItem{
+    padding: var(--padding-medium);
+}
+.eduItem h3{
+    font-weight: 600;
+}
+.educations {
+    text-align: right;
 }
 
 .btnPlacement button {
@@ -472,7 +543,6 @@ text-align: left;
 }
 
 button {
-    
     background-color: var(--background-light);
     border-radius: 25px;
     border: 5px solid #FF5154;
