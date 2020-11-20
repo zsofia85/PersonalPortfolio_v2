@@ -14,7 +14,7 @@ PersonalPortfolio_V2 */
     --background-medium: #FFFAFA;
     --background-purple: #211834;
     --nav-purple: #D4C1EC;
-    --border-purple: #c39ef2;
+    --border-purple: #D4C1EC;
     --text-light: #f2f2ff;
     --text-dark: #211834;
     --highlight: #FF5154;
@@ -285,7 +285,11 @@ nav {
     height: 400px;
     display: flex;
     flex-direction: row;
-}
+    box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+}  /*box-shadow REF: https://css-tricks.com/make-a-smooth-shadow-friend/ */
 
 .product-imgA {
     width: 500px;
@@ -364,8 +368,6 @@ nav {
     padding: 0 var(--margin-large);
     justify-content: center;
     margin-top: -10%;
-    display: none;
-    overflow: hidden;
 }
 
 .album {
@@ -373,6 +375,10 @@ nav {
     flex-direction: column;
     align-items: center;
     padding-bottom: 5vh;
+}
+#gallery{
+    display: none;
+    overflow: hidden;
 }
 
 .gallery-card {
@@ -595,9 +601,10 @@ button {
     font-weight: 700;
     padding: 5px;
     box-shadow: 0px 3px 6px #808080;
+    transition: 0.4s
 }
 
-button:hover {
+.active, button:hover {
     background-color: var(--highlight);
     cursor: pointer;
 }
@@ -612,9 +619,9 @@ footer {
     margin: 0;
     width: 100%;
     height: 300px;
-    background-color: var(--background-purple);
+    background-color: #D4C1EC;
     text-align: center;
-    color: var(--text-light);
+    color: var(--text-dark);
     display: flex;
     justify-content: center;
     align-items: center;
