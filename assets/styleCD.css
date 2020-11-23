@@ -198,3 +198,30 @@ nav {
 }
 
 /* navigation ends here*/
+
+#CD {
+    display: block;
+    height: 1000vh;
+    width: 100vw;
+    background-image: url(img/CaseStudies/CaseStudyCD.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#UM {
+    display: block;
+    height: 1000vh;
+    width: 100vw;
+    background-image: url(img/CaseStudies/CaseStudyUM.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#VP {
+    display: block;
+    height: 1000vh;
+    width: 100vw;
+    background-image: url(img/CaseStudies/CaseStudyVP.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -86,6 +86,7 @@ a {
 }
 
 .zoom {
+    display: block;
     transition: transform .1s;
     margin: 0 auto;
 }
@@ -150,7 +151,7 @@ nav {
 
 .not-logo a:hover {
     color: var(--highlight);
-    text-shadow: 1px 1px 30px #FF5154, 1px 0px 30px #FF5154;
+    text-shadow: 1px 0px 40px #FF5154, 1px 0px 40px #FF5154;
 }
 
 .navigation .not-logo {
@@ -190,7 +191,7 @@ nav {
 
 .social-iconsA i:hover {
     color: var(--highlight);
-    text-shadow: 1px 1px 30px #FF5154, 1px 0px 30px #FF5154;
+    text-shadow: 1px 0px 40px #FF5154, 1px 0px 40px #FF5154;
 }
 
 .icon_gap {
@@ -279,6 +280,12 @@ nav {
 .column2 p {
     margin-left: var(--margin-large);
 }
+
+.project-desc a:hover {
+    color: var(--highlight);
+    text-shadow: 1px 0px 40px #FF5154, 1px 0px 40px #FF5154;
+}
+
 
 .card-holder {
     margin: var(--margin-large);
@@ -377,9 +384,14 @@ nav {
     padding-bottom: 5vh;
 }
 #gallery{
-    display: none;
+    max-height: 0;
     overflow: hidden;
+    transition: all .5s;
 }
+#gallery.open{
+   max-height: 3550px;
+   transition: all 3.5s;
+} 
 
 .gallery-card {
     height: 40vh;
@@ -512,7 +524,10 @@ nav {
 .workDesc {
     width: 60%;
 }
-
+.CVPlacement a:hover {
+    color: var(--highlight);
+    text-shadow: 1px 0px 40px #FF5154, 1px 0px 40px #FF5154;
+}
 .recommend {
     display: flex;
     justify-content: flex-end;
@@ -530,6 +545,10 @@ nav {
     line-height: 3em;
     cursor: pointer;
     text-decoration: underline;
+}
+.recommend a:hover {
+    color: var(--highlight);
+    text-shadow: 1px 0px 40px #FF5154, 1px 0px 40px #FF5154;
 }
 
 .workSub {
