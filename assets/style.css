@@ -588,6 +588,7 @@ nav {
 .eduDesc {
     width: 60%;
     text-align: left;
+    margin-top: var(--margin-medium);
 }
 
 .eduItem {
