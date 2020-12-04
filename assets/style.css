@@ -176,7 +176,7 @@ nav {
 }
 
 /*.logo :hover {
-    box-shadow: 1px 1px 5px #ff989a, 1px 0px 15px #ff989a;
+    text-shadow: 11px 0px 40px #FF5154, 1px 0px 40px #FF5154;
 }*/
 
 .social-iconsA {
@@ -244,6 +244,7 @@ nav {
 
 #landing {
     padding-bottom: var(--margin-large);
+
 }
 
 .container-work {
